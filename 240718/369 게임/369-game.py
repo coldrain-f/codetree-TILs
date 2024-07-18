@@ -1,17 +1,16 @@
 n = int(input())
 
+def is369(n: int) -> bool:
+    if n % 3 == 0:
+        return True
+    while n > 0:
+        if n in {3, 6, 9}:
+            return True
+        n //= 10
+    return False
+
 for i in range(1, n + 1):
-    satisfied = False
-    m = i
-    if i % 3 == 0:
-        satisfied = True
-    else:
-        while m > 0:
-            digit = m % 10
-            if digit == 3 or digit == 6 or digit == 9:
-                satisfied = True
-            m //= 10
-    if satisfied:
+    if is369(i):
         print(0, end=" ")
     else:
         print(i, end=" ")
