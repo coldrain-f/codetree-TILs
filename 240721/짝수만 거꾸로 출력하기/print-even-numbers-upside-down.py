@@ -1,9 +1,6 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-even = []
-for item in arr:
-    if item % 2 == 0:
-        even.append(item)
-
-print(*even[::-1])
+for i in range(n - 1, -1, -1):
+    if arr[i] % 2 == 0:
+        print(arr[i], end=" ")
