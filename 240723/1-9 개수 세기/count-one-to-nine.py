@@ -5,5 +5,5 @@ count = [0] * 10
 for number in numbers:
     count[number] += 1
 
-for item in count:
-    print(item)
+for i in range(1, 10):
+    print(count[i])
