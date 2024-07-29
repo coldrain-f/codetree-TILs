@@ -10,4 +10,4 @@ for i in range(n - 1):
         if diff > largest:
             largest = diff
 
-print(largest)
+print(0 if largest == float("-inf") else largest)
