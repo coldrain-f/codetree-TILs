@@ -14,13 +14,10 @@ for i in range(4):
     for j in range(2):
         ySum[i] += _list[j][i]
 
-avg = 0.0
 for i in range(2):
     print(f"{(xSum[i] / 4):.1f}", end=" ")
-    avg += xSum[i] / 4
 print()
 for i in range(4):
     print(f"{(ySum[i] / 2):.1f}", end=" ")
-    avg += ySum[i] / 2
 print()
-print(f"{(avg / 6):.1f}")
+print(f"{(sum(xSum) / 8):.1f}")
