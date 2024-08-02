@@ -12,6 +12,6 @@ acc = 0
 for item in _list:
     if item[0] == ch:
         _count += 1
-    acc += len(item)
+        acc += len(item)
 
-print(f"{_count} {(acc // n):.2f}")
+print(f"{_count} {(acc / _count):.2f}")
