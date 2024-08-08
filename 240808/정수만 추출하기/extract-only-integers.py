@@ -7,6 +7,5 @@ def convert(s: str) -> int:
     return int(n)
 
 a, b = input().split()
-x = y = ""
 
 print(convert(a) + convert(b))
