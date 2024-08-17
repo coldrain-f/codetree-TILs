@@ -7,7 +7,7 @@ _list2.sort()
 answer = "Yes"
 for i in range(n):
     if _list1[i] != _list2[i]:
-        print("No")
+        answer = "No"
         break
 
 print(answer)
